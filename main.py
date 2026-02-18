@@ -1,7 +1,12 @@
 from fastapi import FastAPI, Query
 import json, random, hashlib, datetime
 from typing import Optional
+importjson, random, hashlib, datetime
+from pathlib import Path
 
+VENDORS = ["vendor_a","vendor_b","vendor_c"]
+REGIONS = ["Lagos","Abuja","Kano","Kaduna","PH"]
+CURRENCIES = ["NGN","USD"]
 app = FastAPI(title="CommercePulse Mock API")
 
 # --- Helper functions from your original script ---
