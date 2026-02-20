@@ -147,6 +147,8 @@ def vendor_payload(event_type, vendor, order_id, dt, base_amount, schema_drift=F
                 payload["note"] = payload.pop("notes")
     return payload
 
+
+
 @app.get("/events")
 def get_events(
     events: int = 100,
